@@ -61,14 +61,16 @@ p {
 
 h1 {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 375%;
+  font-size: 26px;
+  line-height: 42px;
   color: var(--contrast-color);
-  margin: 0;
-  max-width: 650px;
+  width: 360px;
+  margin: 0 auto 0 auto;
   text-align: center;
-  line-height: 60px;
+  letter-spacing: 0.06em;
+  justify-content: center;
 }
+
 h2 {
   font-size: 36px;
   text-align: center;
@@ -84,6 +86,7 @@ h3 {
 .separator-line {
   height: 1px;
   background: #ececec;
+  display: none;
 }
 
 .width-limited {
@@ -135,9 +138,9 @@ body {
 
 .header {
   font-weight: 500;
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  display: none;
 }
 .header.section {
   padding: 0px;
@@ -174,7 +177,7 @@ body {
 }
 
 .banner {
-  padding: 200px 0;
+  padding: 118px 0;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/background.jpg) no-repeat rgba(47, 48, 58, 1);
   background-size: cover;
@@ -292,21 +295,23 @@ body {
   fill: #fff;
   background-color: var(--brand-color);
 }
+.regular-customers {
+  padding: 0;
+  gap: 30px;
+}
 
 .regular-customers ul {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 0px;
+  gap: 30px;
 }
 .customer-logo {
   fill: #afb1b8;
-  padding: 16px 32px;
+  padding: 16px 51px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
-
-.regular-customers {
-  padding: 94px 0;
 }
 
 .customer-logo:hover {
@@ -882,6 +887,9 @@ body {
   .team-card img {
     width: 354px;
   }
+  .customer-logo {
+    padding: 16px 59px;
+  }
 }
 
 /* desktop version */
@@ -928,5 +936,28 @@ body {
   }
   .social-media-links {
     margin-bottom: 30px;
+  }
+  .our-team {
+    padding: 94px 0;
+  }
+  .customer-logo {
+    padding: 16px 32px;
+  }
+  .regular-customers ul {
+    flex-wrap: nowrap;
+  }
+  .header {
+    display: flex;
+  }
+  .separator-line {
+    display: block;
+  }
+  .banner {
+    padding: 200px 0;
+  }
+  h1 {
+    font-size: 46px;
+    line-height: 60px;
+    width: 696px;
   }
 }
