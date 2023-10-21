@@ -72,7 +72,7 @@ h1 {
 h2 {
   font-size: 36px;
   text-align: center;
-  margin: 0px 0px 50px 0px;
+  margin: 0 0 30px 0;
 }
 h3 {
   margin-top: 0px;
@@ -217,29 +217,6 @@ body {
   gap: 30px;
   padding: 0;
 }
-.team-members {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.our-team {
-  background-color: #f5f4fa;
-  padding: 94px 0;
-}
-.our-team .card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0px;
-}
-.social-media-links {
-  display: flex;
-  flex-direction: row;
-}
-.our-team li,
-.our-team img {
-  width: 450px;
-}
 
 .our-team h3 {
   margin: 30px 0 0 0;
@@ -249,53 +226,69 @@ body {
   margin-top: 10px;
   text-align: center;
 }
-
+.our-team {
+  background-color: #f5f4fa;
+  padding: 60px 0;
+}
+.our-team ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  gap: 30px;
+}
+.team-card-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
 .team-card {
   background-color: var(--contrast-color);
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
     0px 1px 3px 0px #0000001f;
 }
-
-.social-media-links {
-  margin: 16px 32px 30px 32px;
-  text-align: center;
-  border-radius: 50%;
-}
-
-.social-media-icon {
-  fill: #afb1b8;
+.team-card img {
+  width: 450px;
 }
 
 .social-media-links a {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  fill: #afb1b8;
 }
 
-.social-media-links a:hover {
+.social-media-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.social-media-links :hover {
   background-color: var(--brand-color);
   transition-property: background-color;
   transition-duration: var(--default-duration);
   transition-timing-function: var(--default-transition);
 }
-.social-media-links a:focus {
+.social-media-links :focus {
   background-color: var(--brand-color);
   transition-property: background-color;
   transition-duration: var(--default-duration);
   transition-timing-function: var(--default-transition);
 }
-.social-media-links a:hover .social-media-icon {
+.social-media-links :hover {
   fill: #fff;
   background-color: var(--brand-color);
   transition-property: background-color, fill;
   transition-duration: var(--default-duration);
   transition-timing-function: var(--default-transition);
 }
-.social-media-links a:focus .social-media-icon {
+.social-media-links :focus {
   fill: #fff;
   background-color: var(--brand-color);
 }
@@ -886,8 +879,7 @@ body {
   .traits-icon {
     padding: 25px 142px;
   }
-  .our-team li,
-  .our-team img {
+  .team-card img {
     width: 354px;
   }
 }
@@ -896,6 +888,9 @@ body {
 @media (min-width: 1158px) {
   .width-limited {
     max-width: var(--desktop-max-width);
+  }
+  h2 {
+    margin: 0 0 50px 0;
   }
   .traits-section h3 {
     justify-content: flex-start;
@@ -925,11 +920,13 @@ body {
     padding: 0px;
   }
 
-  .our-team li,
-  .our-team img {
+  .team-card img {
     width: 270px;
   }
   .our-team ul {
     flex-wrap: nowrap;
+  }
+  .social-media-links {
+    margin-bottom: 30px;
   }
 }
