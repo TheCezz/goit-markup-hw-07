@@ -121,8 +121,9 @@ body {
   align-items: center;
 }
 .nav-2 {
-  display: inline-flex;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   margin-left: 40px;
 }
 .span-web {
@@ -153,6 +154,7 @@ body {
 .header-contact {
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
   align-items: center;
   padding-left: 40px;
 }
@@ -890,6 +892,9 @@ body {
   .customer-logo {
     padding: 16px 59px;
   }
+  .header {
+    display: flex;
+  }
 }
 
 /* desktop version */
@@ -946,9 +951,7 @@ body {
   .regular-customers ul {
     flex-wrap: nowrap;
   }
-  .header {
-    display: flex;
-  }
+
   .separator-line {
     display: block;
   }
@@ -959,5 +962,11 @@ body {
     font-size: 46px;
     line-height: 60px;
     width: 696px;
+  }
+  .header {
+    display: flex;
+  }
+  .nav-2 {
+    flex-direction: row;
   }
 }
