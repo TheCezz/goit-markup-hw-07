@@ -162,38 +162,43 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.header-contact {
+.header-contact a {
   display: flex;
-  align-items: center;
-}
-.header-contact:hover .contact-icon {
-  fill: var(--brand-color);
-  transition-property: fill;
-  transition-duration: var(--default-duration);
-  transition-timing-function: var(--default-transition);
-}
-.header-contact:focus .contact-icon {
-  fill: var(--brand-color);
-  transition-property: fill;
-  transition-duration: var(--default-duration);
-  transition-timing-function: var(--default-transition);
+  align-items: baseline;
+  color: #757575;
 }
 .contact-icon {
-  display: flex;
+  fill: #757575;
   max-width: 16px;
   max-height: 16px;
   padding-right: 10px;
-  fill: #757575;
 }
-
+.header-contact:hover a {
+  fill: var(--brand-color);
+  color: var(--brand-color);
+  transition-property: fill, color;
+  transition-duration: var(--default-duration);
+  transition-timing-function: var(--default-transition);
+}
+.header-contact:focus a {
+  fill: var(--brand-color);
+  color: var(--brand-color);
+  transition-property: fill, color;
+  transition-duration: var(--default-duration);
+  transition-timing-function: var(--default-transition);
+}
+.header-contact:hover .contact-icon {
+  fill: inherit;
+}
 .banner {
   padding: 118px 0;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/background.jpg) no-repeat rgba(47, 48, 58, 1);
+    url(../images/mobile-background.jpg) no-repeat rgba(47, 48, 58, 1);
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* de adaugat backgrounduri pentru celelalte versiuni */
 }
 
 .banner button {
@@ -305,12 +310,12 @@ body {
   fill: #fff;
   background-color: var(--brand-color);
 }
-.regular-customers {
+.our-customers {
   padding: 0;
   gap: 30px;
 }
 
-.regular-customers ul {
+.our-customers ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -871,6 +876,14 @@ body {
   .width-limited {
     max-width: var(--tablet-max-width);
   }
+  .header {
+    display: flex;
+  }
+  .banner {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/tablet-background.jpg) no-repeat rgba(47, 48, 58, 1);
+    background-size: cover;
+  }
   .traits-section h3 {
     justify-content: flex-start;
   }
@@ -891,9 +904,6 @@ body {
   .customer-logo {
     padding: 16px 59px;
   }
-  .header {
-    display: flex;
-  }
 }
 
 /* desktop version */
@@ -903,6 +913,12 @@ body {
   }
   h2 {
     margin: 0 0 50px 0;
+  }
+  .banner {
+    padding: 118px 0;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/background.jpg) no-repeat rgba(47, 48, 58, 1);
+    background-size: cover;
   }
   .traits-section h3 {
     justify-content: flex-start;
@@ -947,7 +963,7 @@ body {
   .customer-logo {
     padding: 16px 32px;
   }
-  .regular-customers ul {
+  .our-customers ul {
     flex-wrap: nowrap;
   }
 
