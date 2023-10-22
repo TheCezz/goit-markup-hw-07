@@ -113,7 +113,6 @@ body {
 }
 
 .nav a {
-  /* margin-left: 50px; */
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -198,7 +197,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* de adaugat backgrounduri pentru celelalte versiuni */
 }
 
 .banner button {
