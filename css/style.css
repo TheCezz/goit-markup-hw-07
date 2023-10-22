@@ -57,6 +57,7 @@ p {
   font-size: var(--small-font-size);
   color: var(--descriptor-color-grey);
   margin: 0px;
+  letter-spacing: 0.03em;
 }
 
 h1 {
@@ -98,7 +99,8 @@ h3 {
 }
 .section {
   margin: 60px auto 60px auto;
-  padding: 0px 16px;
+  padding: 0px 0px;
+  /* a fost padding 16px pe laterale */
 }
 
 body {
@@ -111,20 +113,26 @@ body {
 }
 
 .nav a {
-  margin-left: 50px;
+  /* margin-left: 50px; */
   padding-top: 32px;
   padding-bottom: 32px;
 }
 .nav-1 {
   display: flex;
-  justify-content: space around;
+  justify-content: space-around;
   align-items: center;
+}
+
+.nav-1 .nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  gap: 50px;
 }
 .nav-2 {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 40px;
+  gap: 10px;
 }
 .span-web {
   color: var(--brand-color);
@@ -134,7 +142,10 @@ body {
   font-weight: var(--logo-font-weight);
   font-size: var(--logo-font-size);
   display: flex;
-  margin-right: 43px;
+  margin-right: 93px;
+}
+.header .logo {
+  padding: 26px 0;
 }
 
 .header {
@@ -153,10 +164,7 @@ body {
 }
 .header-contact {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
   align-items: center;
-  padding-left: 40px;
 }
 .header-contact:hover .contact-icon {
   fill: var(--brand-color);
@@ -406,19 +414,22 @@ body {
 }
 
 .footer-wrapper {
-  width: var(--max-width);
+  width: 450px;
   display: flex;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: baseline;
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
 }
-
+.footer-contacts ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .footer-section {
   background-color: var(--banner-color);
   font-weight: 400;
   font-size: var(--small-font-size);
-  padding: 60px 0 60px 0;
   display: flex;
 }
 .footer-section .span-studio {
@@ -440,7 +451,9 @@ body {
 }
 .footer-section .logo {
   margin-bottom: 28px;
+  padding: ;
 }
+
 .footer-section ul {
   margin: 0px;
   padding: 0;
@@ -448,35 +461,21 @@ body {
 .footer-section li {
   margin-bottom: 12px;
 }
-.footer-section .logo {
-  margin-bottom: 28px;
-}
 
 .footer-section h3 {
   color: var(--contrast-color);
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding-bottom: 20px;
   margin: 0px;
 }
 
-.footer-social-media ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.footer-social-media {
-  margin-top: 15px;
-  margin-left: 94px;
-}
-
 .footer-social-media .social-media-links li {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  margin-right: 10px;
 }
-.footer-social-media .social-media-icon {
+.footer-social-media svg {
   fill: var(--contrast-color);
 }
 
@@ -968,5 +967,6 @@ body {
   }
   .nav-2 {
     flex-direction: row;
+    gap: 40px;
   }
 }
