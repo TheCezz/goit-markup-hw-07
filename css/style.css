@@ -557,7 +557,6 @@ footer h3 {
   color: var(--contrast-color);
   display: flex;
   justify-content: center;
-  align-items: center;
   padding-bottom: 20px;
   margin: 0px;
 }
@@ -1078,5 +1077,28 @@ footer h3 {
   }
   .subscribe-section .text-input {
     width: 358px;
+  }
+  .footer-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-contacts ul {
+    text-align: start;
+  }
+  footer .logo {
+    justify-content: flex-start;
+  }
+  .subscribe-section {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: row;
+  }
+  footer h3 {
+    justify-content: flex-start;
+    padding-top: 12px;
+  }
+  .subscribe-section span {
+    padding-top: 12px;
   }
 }
