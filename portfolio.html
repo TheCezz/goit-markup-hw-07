@@ -65,8 +65,10 @@
             <span>Studio</span>
           </a>
           <nav class="nav-link-wrapper">
-            <a class="nav-link nav-link-current" href="index.html">Studio</a>
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
+            <a class="nav-link" href="index.html">Studio</a>
+            <a class="nav-link nav-link-current" href="portfolio.html"
+              >Portfolio</a
+            >
             <a class="nav-link" href="#">Contacts</a>
           </nav>
         </div>
@@ -248,88 +250,172 @@
         </ul>
       </section>
     </main>
-    <footer class="footer-section section">
-      <div class="section width-limited">
-        <div class="footer-wrapper width-limited">
-          <div class="footer-contacts">
-            <ul>
-              <li>
-                <a class="logo" href="#">
-                  <span class="span-web">Web</span
-                  ><span class="span-studio">Studio</span>
-                </a>
-              </li>
-              <li><address>695 Park Ave, NY 10065, USA</address></li>
-              <li>
-                <a target="_blank" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li><a href="tel:+1212-772-4150">+1 212-772-4150</a></li>
-            </ul>
-          </div>
-          <div class="footer-social-media">
-            <h3>FIND US ON</h3>
-            <ul class="social-media-set">
-              <li>
-                <a href="#"
-                  ><svg class="social-media-icon" width="20" height="20">
-                    <use
-                      href="./images/icons/symbol-defs.svg#icon-instagram"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="social-media-icon" width="20" height="20">
-                    <use
-                      href="./images/icons/symbol-defs.svg#icon-twitter"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="social-media-icon" width="20" height="20">
-                    <use
-                      href="./images/icons/symbol-defs.svg#icon-facebook"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="social-media-icon" width="20" height="20">
-                    <use
-                      href="./images/icons/symbol-defs.svg#icon-linkedin"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+    <footer>
+      <div class="footer-wrapper section width-limited">
+        <div class="footer-contacts">
+          <a class="logo" href="index.html">
+            <span class="span-web">Web</span
+            ><span class="span-studio">Studio</span>
+          </a>
+          <ul>
+            <li><address>695 Park Ave, NY 10065, USA</address></li>
+            <li>
+              <a target="_blank" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li><a href="tel:+1212-772-4150">+1 212-772-4150</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-media">
+          <h3>FIND US ON</h3>
+          <ul class="social-media-links">
+            <li>
+              <a href="#"
+                ><svg width="20" height="20">
+                  <use
+                    href="./images/icons/symbol-defs.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="20" height="20">
+                  <use
+                    href="./images/icons/symbol-defs.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="20" height="20">
+                  <use
+                    href="./images/icons/symbol-defs.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <form id="subscribe-form">
           <div class="subscribe-section">
-            <label>
+            <label for="email-input">
               <span>SUBSCRIBE TO THE NEWSLETTER</span>
               <input
+                id="email-input"
                 class="text-input"
                 type="text"
-                name="SUBSCRIBE TO THE NEWSLETTER"
+                name="subscribe-email-input"
                 placeholder="E-mail"
               />
             </label>
 
-            <button class="footer-button" type="submit" href="#">
+            <button class="footer-button" type="submit" form="subscribe-form">
               Subscribe
               <svg>
                 <use href="./images/icons/symbol-defs.svg#icon-icon-send"></use>
               </svg>
             </button>
           </div>
+        </form>
+      </div>
+
+      <!-- aici se termina footer -->
+    </footer>
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <button class="close-btn" data-modal-close>&times;</button>
+        <p>Leave your information and we'll call you back</p>
+        <div>
+          <form class="form-section" id="request-our-service">
+            <div class="form-item">
+              <label for="name">
+                <span>Name</span>
+                <svg>
+                  <use
+                    href="./images/icons/symbol-defs.svg#icon-person-form"
+                  ></use>
+                </svg>
+                <input
+                  id="name"
+                  class="text-input"
+                  type="text"
+                  name="name"
+                  autofocus
+                />
+              </label>
+            </div>
+            <div class="form-item">
+              <label for="telephone">
+                <span>Telephone</span>
+                <svg>
+                  <use
+                    href="./images/icons/symbol-defs.svg#icon-phone-form"
+                  ></use>
+                </svg>
+                <input
+                  id="telephone"
+                  class="text-input"
+                  type="text"
+                  name="telephone"
+                />
+              </label>
+            </div>
+            <div class="form-item">
+              <label for="email">
+                <svg>
+                  <use
+                    href="./images/icons/symbol-defs.svg#icon-email-form"
+                  ></use>
+                </svg>
+                <span>E-mail</span>
+                <input id="email" class="text-input" type="text" name="email" />
+              </label>
+            </div>
+            <div class="form-item">
+              <label for="comments">
+                <span>Comments</span>
+                <textarea
+                  id="comments"
+                  class="textarea"
+                  name="comments"
+                  rows="5"
+                  placeholder="Enter the text"
+                ></textarea>
+              </label>
+            </div>
+            <div class="terms-and-conditions">
+              <label class="checkbox-label" for="checkbox">
+                <input
+                  id="checkbox"
+                  type="checkbox"
+                  name="terms-and-conditions"
+                />
+                <span class="custom-checkbox"></span>
+                <span>
+                  I agree with the letter and accept the
+                  <a href="#">Terms and Conditions</a>
+                </span>
+              </label>
+            </div>
+            <div class="form-item">
+              <button type="submit" form="request-our-service">Submit</button>
+            </div>
+          </form>
         </div>
       </div>
-    </footer>
+    </div>
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script
       defer
