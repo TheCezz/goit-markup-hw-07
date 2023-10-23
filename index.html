@@ -18,34 +18,77 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="container">
-    <header class="header width-limited section">
-      <div class="nav-1">
+    <div class="js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40px" height="40px">
+          <use href="./images/icons/symbol-defs.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-drawer">
+        <a class="mobile-nav-link" href="index.html">Studio</a>
+        <a class="mobile-nav-link" href="portfolio.html">Portfolio</a>
+        <a class="mobile-nav-link" href="#">Contacts</a>
+      </nav>
+      <a class="mobile-menu-phone" href="tel:+1212-772-4150">+1212-772-4150</a>
+      <a
+        class="mobile-menu-email"
+        target="_blank"
+        href="mailto:info@devstudio.com"
+        >info@devstudio.com
+      </a>
+      <div class="mobile-menu-social-media">
+        <span>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">Facebook</a>
+          <a href="#">Linkedin</a>
+        </span>
+      </div>
+    </div>
+
+    <header>
+      <div class="mobile-header width-limited">
         <a class="logo" href="#">
           <span class="span-web">Web</span>
           <span>Studio</span>
         </a>
-        <nav class="nav">
-          <a class="nav-link nav-link-current" href="index.html">Studio</a>
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-          <a class="nav-link" href="#">Contacts</a>
-        </nav>
+        <button class="button menu-toggle js-open-menu">
+          <svg width="40px" height="40px">
+            <use href="./images/icons/symbol-defs.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
       </div>
-      <div class="nav-2">
-        <div class="header-contact">
-          <a id="email" target="_blank" href="mailto:info@devstudio.com">
-            <svg class="contact-icon" width="16px" height="12px">
-              <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com
+      <div class="header width-limited section">
+        <div class="left-nav-section">
+          <a class="logo" href="#">
+            <span class="span-web">Web</span>
+            <span>Studio</span>
           </a>
+          <nav class="nav-link-wrapper">
+            <a class="nav-link nav-link-current" href="index.html">Studio</a>
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+            <a class="nav-link" href="#">Contacts</a>
+          </nav>
         </div>
-        <div class="header-contact">
-          <a id="phone" href="tel:+1212-772-4150">
-            <svg class="contact-icon" width="12px" height="16px">
-              <use href="./images/icons/symbol-defs.svg#icon-smartphone"></use>
-            </svg>
-            +1 212-772-4150
-          </a>
+        <div class="right-nav-section">
+          <div class="header-contact">
+            <a id="email" target="_blank" href="mailto:info@devstudio.com">
+              <svg class="contact-icon" width="16px" height="12px">
+                <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </div>
+          <div class="header-contact">
+            <a id="phone" href="tel:+1212-772-4150">
+              <svg class="contact-icon" width="12px" height="16px">
+                <use
+                  href="./images/icons/symbol-defs.svg#icon-smartphone"
+                ></use>
+              </svg>
+              +1 212-772-4150
+            </a>
+          </div>
         </div>
       </div>
     </header>
@@ -214,7 +257,6 @@
                     ></use>
                   </svg>
                 </a>
-
                 <a href="#">
                   <svg width="20" height="20">
                     <use
@@ -355,6 +397,7 @@
         </ul>
       </section>
     </main>
+    <!-- aici incepe footer -->
     <footer class="footer-section section">
       <div class="footer-wrapper section width-limited">
         <div class="footer-contacts">
@@ -435,6 +478,8 @@
           </div>
         </form>
       </div>
+
+      <!-- aici se termina footer -->
     </footer>
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
@@ -520,5 +565,12 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
