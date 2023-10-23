@@ -508,6 +508,9 @@ body {
   transition-timing-function: var(--default-transition);
 }
 
+footer .section {
+  mmargin: 0;
+}
 footer .logo {
   margin: 0px;
   justify-content: center;
@@ -517,8 +520,10 @@ footer .logo {
   flex-direction: column;
   gap: 60px;
   padding: 60px 0px;
+  margin: 0px auto;
 }
 .footer-social-media .social-media-links {
+  margin: 0px;
   padding: 0px;
 }
 .footer-contacts ul {
@@ -527,9 +532,11 @@ footer .logo {
   margin: 0px;
 }
 .footer-contacts li {
-  margin-bottom: 12px;
+  padding-bottom: 12px;
 }
-
+.footer-contacts li:last-child {
+  padding-bottom: 0px;
+}
 footer {
   background-color: var(--banner-color);
   font-weight: 400;
@@ -590,6 +597,7 @@ footer h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   padding: 15px;
   background-color: #2f303a;
   border-style: none;
@@ -616,14 +624,17 @@ footer h3 {
   transition-duration: var(--default-duration);
   transition-timing-function: var(--default-transition);
 }
-/* !TODO : DE FIXUIT LAYOUTUL BUTONULUI */
+
 .footer-button {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  /* gap: 25px; */
   width: 200px;
   height: 50px;
+  gap: 25px;
+  padding: 0px 28px 0px 48px;
+  padding-left: 48px;
+  padding-right: 28px;
 }
 .footer-button svg {
   width: 24px;
