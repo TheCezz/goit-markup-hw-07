@@ -986,7 +986,7 @@ footer h3 {
   transition-timing-function: var(--default-transition);
 }
 
-.what-we-do 
+
 /* MEDIA SECTION */
 /* tablet version */
 @media (min-width: 768px) and (max-width: 1157px) {
@@ -1058,7 +1058,6 @@ footer h3 {
   }
 }
 
-/* desktop version */
 @media (min-width: 1158px) {
   .width-limited {
     max-width: var(--desktop-max-width);
@@ -1212,6 +1211,7 @@ footer h3 {
   .banner {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/background@2x.jpg) no-repeat rgba(47, 48, 58, 1);
+      background-size: cover;
   }
 }
 
@@ -1224,6 +1224,7 @@ footer h3 {
   .banner {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/tablet-background@2x.jpg) no-repeat rgba(47, 48, 58, 1);
+      background-size: cover;
   }
 }
 
@@ -1235,5 +1236,6 @@ footer h3 {
   .banner {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/mobile-background.jpg) no-repeat rgba(47, 48, 58, 1);
+      background-size: cover;
   }
 }
