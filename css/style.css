@@ -985,6 +985,8 @@ footer h3 {
   transition-duration: var(--default-duration);
   transition-timing-function: var(--default-transition);
 }
+
+.what-we-do 
 /* MEDIA SECTION */
 /* tablet version */
 @media (min-width: 768px) and (max-width: 1157px) {
