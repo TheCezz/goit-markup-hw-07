@@ -111,16 +111,23 @@ body {
   font-family: "Roboto", "sans-serif", "monospace";
   color: var(--default-font-color);
 }
+.mobile-header.width-limited {
+  max-width: 90vw;
+}
 .mobile-header {
   display: flex;
   justify-content: space-between;
   fill: var(--default-font-color);
+  margin: 0px auto;
 }
+
 .mobile-header .logo {
   padding: 16px 0;
+  margin: 0px;
 }
 .mobile-header .menu-toggle {
   padding: 10px 0;
+
   background-color: #fff;
 }
 .menu-toggle {
@@ -131,14 +138,10 @@ body {
 }
 .menu-toggle:hover {
   fill: var(--brand-color);
-  transition: ;
   transition-property: fill;
   transition-timing-function: var(--default-transition);
   transition-duration: var(--default-duration);
   background-color: #fff;
-}
-.mobile-header {
-  margin: 0px auto;
 }
 .js-menu-container {
   display: none;
@@ -554,7 +557,6 @@ body {
 }
 .portfolio-items h3 {
   font-size: 18px;
-  padding-left: 24px;
   padding-top: 20px;
   margin: 0;
 }
@@ -609,7 +611,7 @@ body {
 }
 
 footer .section {
-  mmargin: 0;
+  margin: 0;
 }
 footer .logo {
   margin: 0px;
@@ -799,7 +801,7 @@ footer h3 {
   left: 50%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
-  width: 450px;
+  max-width: 90vw;
   height: 609px;
   padding: 40px;
   border-radius: 4px;
@@ -881,7 +883,8 @@ footer h3 {
 .form-section .text-input {
   box-sizing: border-box;
   padding: 11px 42px;
-  width: 370px;
+  width: 85vw;
+  max-width: 370px;
   height: 40px;
   border: none;
   border: 1px solid #21212133;
@@ -892,7 +895,8 @@ footer h3 {
 }
 .form-section .textarea {
   box-sizing: border-box;
-  width: 370px;
+  width: 85vw;
+  max-width: 370px;
   height: 138px;
   resize: none;
   font-family: Roboto;
@@ -1040,6 +1044,14 @@ footer h3 {
   .traits-wrapper P {
     width: 100%;
   }
+  .modal-content {
+    width: 450px;
+    height: 609px;
+  }
+  .form-section .text-input,
+  .form-section .textarea {
+    width: 370px;
+  }
 }
 
 /* desktop version */
@@ -1153,7 +1165,9 @@ footer h3 {
     width: 528px;
     height: 581px;
   }
-  .form-section .text-input,
+  .form-section .text-input {
+    width: 448px;
+  }
   .form-section .textarea {
     width: 448px;
   }
@@ -1165,6 +1179,18 @@ footer h3 {
   }
   .traits-wrapper P {
     width: 100%;
+  }
+  .form-section .text-input {
+    width: 448px;
+    max-width: none;
+  }
+
+  .form-section .textarea {
+    width: 448px;
+    max-width: none;
+  }
+  .modal-content {
+    width: 528px;
   }
 }
 
