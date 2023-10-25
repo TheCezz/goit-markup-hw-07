@@ -345,7 +345,11 @@ body {
 .traits-wrapper {
   max-width: 90vw;
   text-align: start;
-  padding: 0px calc(10vw / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  margin: 0px auto;
 }
 .traits-section ul {
   display: flex;
@@ -363,6 +367,10 @@ body {
   border-radius: 4px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
+  max-width: 90vw;
+}
+.traits-wrapper P {
+  width: 90vw;
 }
 .what-we-do {
   display: none;
@@ -1029,6 +1037,9 @@ footer h3 {
   .traits-wrapper {
     padding: 0px 0px;
   }
+  .traits-wrapper P {
+    width: 100%;
+  }
 }
 
 /* desktop version */
@@ -1151,6 +1162,9 @@ footer h3 {
   }
   .traits-wrapper {
     padding: 0px 0px;
+  }
+  .traits-wrapper P {
+    width: 100%;
   }
 }
 
