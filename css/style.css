@@ -231,7 +231,6 @@ body {
   display: none;
 }
 .header.section {
-  padding: 0px;
   margin: 0px auto;
 }
 .nav {
@@ -344,7 +343,9 @@ body {
 }
 
 .traits-wrapper {
-  max-width: 450px;
+  max-width: 90vw;
+  text-align: start;
+  padding: 0px calc(10vw / 2);
 }
 .traits-section ul {
   display: flex;
@@ -358,7 +359,7 @@ body {
 .traits-icon {
   width: 70px;
   height: 70px;
-  padding: 25px 190px;
+  padding: 25px calc((90vw - 70px) / 2);
   border-radius: 4px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
@@ -387,8 +388,10 @@ body {
 .our-team ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 0px;
   gap: 30px;
+  margin: 0px auto;
 }
 .team-card-wrapper {
   margin-left: auto;
@@ -401,7 +404,7 @@ body {
     0px 1px 3px 0px #0000001f;
 }
 .team-card img {
-  width: 450px;
+  width: 90vw;
 }
 
 .social-media-links a {
@@ -693,7 +696,7 @@ footer h3 {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
-  width: 450px;
+  width: 90vw;
 }
 
 .subscribe-section .text-input:hover {
@@ -1020,6 +1023,12 @@ footer h3 {
   .footer-social-media {
     margin-left: 165px;
   }
+  .subscribe-section .text-input {
+    width: 450px;
+  }
+  .traits-wrapper {
+    padding: 0px 0px;
+  }
 }
 
 /* desktop version */
@@ -1139,6 +1148,9 @@ footer h3 {
   }
   .terms-and-conditions span {
     font-size: 14px;
+  }
+  .traits-wrapper {
+    padding: 0px 0px;
   }
 }
 
