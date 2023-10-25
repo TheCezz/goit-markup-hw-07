@@ -1205,9 +1205,33 @@ footer h3 {
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  (min-resolution: 2dppx),
+  (min-width: 1158px) {
   .banner {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/background@2x.jpg) no-repeat rgba(47, 48, 58, 1);
+  }
+}
+
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx),
+  (min-width: 768px) and (max-width: 1157px) {
+  .banner {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/tablet-background@2x.jpg) no-repeat rgba(47, 48, 58, 1);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx),
+  (max-width: 767px) {
+  .banner {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/mobile-background.jpg) no-repeat rgba(47, 48, 58, 1);
   }
 }
